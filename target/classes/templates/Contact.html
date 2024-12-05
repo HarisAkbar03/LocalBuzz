@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LocalBuzz</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        .header {
+            background-image: url('asset/ncity.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+            .header::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            }
+
+            .header h1 {
+                position: relative;
+                font-size: 48px;
+                z-index: 1;
+            }
+
+        /* Section Styles */
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+            .section h2 {
+                margin-bottom: 20px;
+                font-size: 36px;
+                color: #00cc99;
+            }
+
+            .section p {
+                line-height: 1.6;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .contact-form label {
+                font-size: 18px;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                font-size: 16px;
+            }
+
+            .contact-form button {
+                background-color: #00cc99;
+                color: white;
+                border: none;
+                padding: 12px 20px;
+                font-size: 18px;
+                border-radius: 8px;
+                cursor: pointer;
+                width: 100%;
+            }
+
+                .contact-form button:hover {
+                    background-color: #009973;
+                }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Contact Us</h1>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="section">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, suggestions, or need support, feel free to reach out to us. We're here to help!</p>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="section">
+        <div class="contact-form">
+            <form action="/submit-contact-form" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message here" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 LocalBuzz. All rights reserved.</p>
+    </footer>
+</body>
+</html>

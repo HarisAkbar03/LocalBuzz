@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Owner Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .dashboard-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+            .dashboard-nav a {
+                text-decoration: none;
+                padding: 10px 20px;
+                background-color: #00cc99;
+                color: #fff;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+                .dashboard-nav a:hover {
+                    background-color: #009977;
+                }
+
+        .business-info {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .business-card {
+            padding: 20px;
+            background: #e3f2f1;
+            border-radius: 8px;
+            width: 48%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .business-card h3 {
+                margin-bottom: 15px;
+            }
+
+            .business-card p {
+                font-size: 16px;
+                color: #333;
+            }
+
+            .business-card strong {
+                color: #00cc99;
+            }
+
+        .manage-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+            .manage-button a {
+                background-color: #ff5722;
+                padding: 10px 20px;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            background-color: #000;
+            margin-bottom: 30px;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('asset/ncity.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #fff;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>Welcome to Your Dashboard</h1>
+            <p>Manage your business efficiently</p>
+        </div>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="container">
+        <h1>Welcome to Your Dashboard</h1>
+
+        <!-- Navigation Links -->
+        <div class="dashboard-nav">
+            <a href="/EBui">Edit Business</a>
+            <a href="/Contact">Contact Us</a>
+        </div>
+
+        <!-- Business Information -->
+        <div class="business-info">
+            <div class="business-card">
+                <h3>Your Business Information</h3>
+                <p><strong>Business Name:</strong> Sample Buisness</p>
+                <p><strong>Owner Name:</strong> Haris Akbar</p>
+                <p><strong>Email:</strong> harisakber21@gmail.com</p>
+                <p><strong>Phone:</strong> +1 904 820 4696</p>
+                <p><strong>Address:</strong> 37 Melville Rd</p>
+                <p><strong>Category:</strong> Restaurant</p>
+            </div>
+
+            <div class="business-card">
+                <h3>Analytics</h3>
+                <p><strong>Total Sales:</strong> $12,000</p>
+                <p><strong>Monthly Sales:</strong> $1,000</p>
+                <p><strong>Reviews:</strong> 200</p>
+                <p><strong>Ratings:</strong> 4.5 / 5</p>
+            </div>
+        </div>
+
+        <!-- Business Management Links -->
+        <div class="manage-button">
+            <a href="/BDashboard">Manage Your Business</a>
+        </div>
+    </div>
+
+</body>
+</html>
