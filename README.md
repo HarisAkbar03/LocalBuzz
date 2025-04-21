@@ -2,8 +2,11 @@
 # 🌟 LocalBuzz
 
 LocalBuzz is a vibrant web application that helps users connect with local businesses, explore events, and read community-driven reviews — all in one platform. Whether you're a foodie, an explorer, or a business owner, LocalBuzz is your go-to place to **Connect, Discover, and Engage**.
+https://github.com/HarisAkbar03/LocalBuzz/raw/main/LocalBuzz.png
 
-![Alt text](https://github.com/HarisAkbar03/LocalBuzz/raw/main/src/main/resources/static/images/logo.png)
+
+![LocalBuzz Logo](https://github.com/HarisAkbar03/LocalBuzz/raw/main/LocalBuzz.png)
+
 
 
 ---
